@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from typing import Any, Literal, TypedDict
+from typing import Any, Literal, TypedDict, Union
 
 
 class ActionScan(TypedDict):
@@ -24,7 +24,7 @@ class ActionUpgrade(TypedDict):
     upgrade: Literal["energy", "silver", "defense", "speed", "sensor"]
 
 
-Action = ActionScan | ActionSendFleet | ActionUpgrade
+Action = Union[ActionScan, ActionSendFleet, ActionUpgrade]
 
 
 @dataclass
