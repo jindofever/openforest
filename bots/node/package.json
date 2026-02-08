@@ -1,0 +1,16 @@
+{
+  "name": "openforest-bots",
+  "private": true,
+  "type": "module",
+  "version": "0.1.0",
+  "scripts": {
+    "random": "tsx random_bot.ts",
+    "rush": "tsx rush_bot.ts",
+    "expansion": "tsx expansion_bot.ts",
+    "turtle": "tsx turtle_bot.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.15.7",
+    "typescript": "^5.5.2"
+  }
+}

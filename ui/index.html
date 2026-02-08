@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open Forest Spectator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Krona+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">Open Forest</p>
+          <h1>Fogged conflicts in a living forest grid</h1>
+          <p class="subtitle">Spectate bot-vs-bot battles under partial information.</p>
+        </div>
+        <div class="status">
+          <div class="stat">
+            <span>Tick</span>
+            <strong id="tick">0</strong>
+          </div>
+          <div class="stat">
+            <span>Remaining</span>
+            <strong id="remaining">0</strong>
+          </div>
+        </div>
+      </header>
+
+      <main class="layout">
+        <section class="canvas-card">
+          <canvas id="map"></canvas>
+          <div class="legend">
+            <div><span class="dot owned"></span>Owned</div>
+            <div><span class="dot neutral"></span>Neutral</div>
+            <div><span class="dot enemy"></span>Enemy</div>
+            <div><span class="dot artifact"></span>Artifact</div>
+          </div>
+        </section>
+
+        <aside class="sidebar">
+          <div class="panel">
+            <h2>Perspective</h2>
+            <label>
+              Player
+              <select id="player-select"></select>
+            </label>
+            <label class="toggle">
+              <input id="omniscient" type="checkbox" checked />
+              <span>Omniscient Spectator</span>
+            </label>
+          </div>
+
+          <div class="panel">
+            <h2>Scoreboard</h2>
+            <div id="scoreboard" class="scoreboard"></div>
+          </div>
+
+          <div class="panel">
+            <h2>Signal Feed</h2>
+            <p class="muted">Fleet pings and artifact pulses appear as translucent rings.</p>
+          </div>
+        </aside>
+      </main>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

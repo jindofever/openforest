@@ -1,0 +1,22 @@
+{
+  "seed": 1337,
+  "tick_ms": 500,
+  "match_ticks": 2400,
+  "planet_count": 1200,
+  "artifact_count": 5,
+  "max_actions_per_tick": 5,
+  "speed_const": 0.08,
+  "capture_threshold_fraction": 0.15,
+  "defense_multiplier": 0.2,
+  "ping_ttl_ticks": 3,
+  "ping_jitter": 0.03,
+  "ping_base_radius": 0.05,
+  "ping_base_strength": 0.4,
+  "artifact_ping_radius": 0.08,
+  "artifact_ping_strength": 0.25,
+  "artifact_points_per_tick": 1.5,
+  "score_top_n": 10,
+  "commit_timeout_ms": 200,
+  "reveal_timeout_ms": 200,
+  "player_home_min_distance": 0.7
+}
